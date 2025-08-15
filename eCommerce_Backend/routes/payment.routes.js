@@ -26,8 +26,8 @@ router.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://e-commerce-full-stack-lovat.vercel.app//success",
-      cancel_url: "https://e-commerce-full-stack-lovat.vercel.app//failure",
+      success_url: "https://e-commerce-full-stack-lovat.vercel.app/success",
+      cancel_url: "https://e-commerce-full-stack-lovat.vercel.app/failure",
     });
 
     res.json({ id: session.id });
