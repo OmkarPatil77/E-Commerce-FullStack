@@ -1,12 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "eCommerce_Frontend/package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/frontend/$1" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
