@@ -22,7 +22,7 @@ A production-grade **E-Commerce Web Application** built with a focus on a secure
 - **Zustand** – State management
 
 
-## 🔑 Features
+##  Features
 - User authentication (JWT-based login/signup)
 - Product listing & filtering
 - Shopping cart management
