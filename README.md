@@ -23,9 +23,9 @@ A production-grade **E-Commerce Web Application** built with a focus on a secure
 
 ## 📂 Folder Structure
 
-E-Commerce-FullStack/
-├── eCommerce_Backend/ # Backend code
-└── eCommerce_Frontend/ # Frontend code
+E-Commerce-FullStack --
+# eCommerce_Backend/ ...Backend code
+# eCommerce_Frontend/ ...Frontend code
 
 ## 🔑 Features
 - User authentication (JWT-based login/signup)
