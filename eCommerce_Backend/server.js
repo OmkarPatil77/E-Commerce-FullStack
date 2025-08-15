@@ -29,13 +29,21 @@ app.get("/", (req, res) => {
 })
 
 // Test routes
-app.use("/api/test",testRoutes);
-app.use("/api/auth", userRoutes);
-app.use("/api/products", productRoutes);
-app.use("/api/cart", cartRoutes);
-app.use("/api/orders", orderRoutes);
-app.use("/api/admin", adminRoutes);
-app.use("/api/payment", paymentRoutes);
+// app.use("/api/test",testRoutes);
+// app.use("/api/auth", userRoutes);
+// app.use("/api/products", productRoutes);
+// app.use("/api/cart", cartRoutes);
+// app.use("/api/orders", orderRoutes);
+// app.use("/api/admin", adminRoutes);
+// app.use("/api/payment", paymentRoutes);
+
+app.use("/test",testRoutes);
+app.use("/auth", userRoutes);
+app.use("/products", productRoutes);
+app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
+app.use("/admin", adminRoutes);
+app.use("/payment", paymentRoutes);
 
 // 404 Middleware
 app.use(notFound);
