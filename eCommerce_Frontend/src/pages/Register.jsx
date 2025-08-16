@@ -131,7 +131,8 @@ const Register = () => {
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="USER">User</SelectItem>
-{/*           <SelectItem value="ADMIN">Admin</SelectItem> */} //REMOVED ADMIN OPTION
+{/*           <SelectItem value="ADMIN">Admin</SelectItem> */}
+{/* REMOVED ADMIN OPTION */}
         </SelectContent>
       </Select>
     </div>
