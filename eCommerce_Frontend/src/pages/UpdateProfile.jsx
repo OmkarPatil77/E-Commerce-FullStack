@@ -7,7 +7,8 @@ import { Loader2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function UpdateProfile() {
-  const [form, setForm] = useState({ username: "", email: "", password: "", role: "" });
+  const [form, setForm] = useState({ username: "", email: "", password: "" }); 
+//  role: "" TEMPORARY REMOVED THIS FROM ABOVE LINE
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function UpdateProfile() {
           username: data.data.username || "",
           email: data.data.email || "",
           password: "",
-          role: data.data.role || "",
+          // role: data.data.role || "", TEMPORARY REMOVED THIS
         });
       } catch (error) {
         console.error(error);
@@ -84,12 +85,13 @@ export default function UpdateProfile() {
               value={form.password}
               onChange={handleChange}
             />
-            <Input
+{/*             <Input
               name="role"
               placeholder="Role"
               value={form.role}
               onChange={handleChange}
-            />
+            /> */}
+{/* TEMPORARY REMOVED ABOVE CODE BLOCK  */}
             <Button type="submit" className="w-full" disabled={updating}>
               {updating ? <Loader2 className="animate-spin w-4 h-4 mr-2" /> : null}
               {updating ? "Updating..." : "Update Profile"}
