@@ -15,7 +15,7 @@ export default function MyOrders() {
   if (loading) return <p className="text-center mt-10">Loading orders...</p>;
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-6">
+    <div className="max-w-4xl h-svh mx-auto p-6 space-y-6">
       <h1 className="text-2xl font-bold">My Orders</h1>
       {orders.length === 0 ? (
         <p>No orders placed yet.</p>
