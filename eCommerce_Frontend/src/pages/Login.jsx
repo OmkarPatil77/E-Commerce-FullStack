@@ -51,7 +51,7 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <div className="flex justify-center items-center min-h-screen mx-auto mt-16 p-8 bg-white rounded-xl shadow-lg">
+    <div className="flex justify-center items-center min-h-screen max-w-md mx-auto mt-16 p-8 bg-white rounded-xl shadow-lg">
   <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
 
   <form onSubmit={handleSubmit} className="space-y-4">
